@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#070b14"/>
+  <title>Guida Frostfire Mine – Orichalcum, vene e consigli</title>
+  <meta name="description" content="Strategia Frostfire Mine: teletrasporti, controllo vene, picchi punti, rotazioni."/>
+  <link rel="canonical" href="https://www.whiteoutsurvival-community.com/it/frostfire-mine.html"/>
+  <link rel="alternate" hreflang="en" href="https://www.whiteoutsurvival-community.com/en/frostfire-mine.html"/>
+  <link rel="alternate" hreflang="de" href="https://www.whiteoutsurvival-community.com/de/frostfire-mine.html"/>
+  <link rel="alternate" hreflang="fr" href="https://www.whiteoutsurvival-community.com/fr/frostfire-mine.html"/>
+  <link rel="alternate" hreflang="es" href="https://www.whiteoutsurvival-community.com/es/frostfire-mine.html"/>
+  <link rel="alternate" hreflang="it" href="https://www.whiteoutsurvival-community.com/it/frostfire-mine.html"/>
+  <link rel="alternate" hreflang="pl" href="https://www.whiteoutsurvival-community.com/pl/frostfire-mine.html"/>
+  <link rel="alternate" hreflang="x-default" href="https://www.whiteoutsurvival-community.com/en/frostfire-mine.html"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="WOSC – Whiteout Survival Community"/>
+  <meta property="og:title" content="Guida Frostfire Mine – Orichalcum, vene e consigli"/>
+  <meta property="og:description" content="Strategia Frostfire Mine: teletrasporti, controllo vene, picchi punti, rotazioni."/>
+  <meta property="og:url" content="https://www.whiteoutsurvival-community.com/it/frostfire-mine.html"/>
+  <meta property="og:image" content="https://www.whiteoutsurvival-community.com/assets/2000members.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <link rel="icon" href="/assets/logo.png"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "WOSC – Whiteout Survival Community", "url": "https://www.whiteoutsurvival-community.com", "sameAs": ["https://www.facebook.com/wosc.community", "https://www.instagram.com/wosc.whiteout.survival/", "https://x.com/WOSCcommunity"]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "WOSC è ufficiale?", "acceptedAnswer": {"@type": "Answer", "text": "No, è una community Discord gestita dai giocatori."}}, {"@type": "Question", "name": "Cos’è SVS?", "acceptedAnswer": {"@type": "Answer", "text": "SVS (State vs State) mette due stati contro, con fasi di preparazione e battaglia."}}, {"@type": "Question", "name": "Quanto spesso Bear Hunt?", "acceptedAnswer": {"@type": "Answer", "text": "Evento di alleanza circa ogni due giorni, dura ~30 minuti."}}, {"@type": "Question", "name": "Posso fare transfer?", "acceptedAnswer": {"@type": "Answer", "text": "Sì, con lo State Transfer, con restrizioni."}}, {"@type": "Question", "name": "Cos’è Frostfire Mine?", "acceptedAnswer": {"@type": "Answer", "text": "Evento di 30 minuti per raccogliere Orichalcum dalle vene; niente perdite permanenti di truppe."}}, {"@type": "Question", "name": "Come entro?", "acceptedAnswer": {"@type": "Answer", "text": "Clicca “Entra su Discord”."}}]}</script>
+  <style>
+    :root{--bg:#070b14;--text:#eaf2ff;--muted:#aab8d6;--ice:#7dd3fc;--ice2:#60a5fa;--shadow:0 22px 70px rgba(0,0,0,.65);--r:18px;--max:1180px}
+    *{box-sizing:border-box} html,body{height:100%} body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;color:var(--text);background:var(--bg);overflow-x:hidden}
+    a{color:inherit} .wrap{max-width:var(--max);margin:0 auto;padding:18px 16px 40px}
+    .top{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:linear-gradient(180deg,rgba(7,11,20,.84),rgba(7,11,20,.28));border-bottom:1px solid rgba(255,255,255,.06)}
+    .topInner{max-width:var(--max);margin:0 auto;padding:10px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .brand{display:flex;gap:10px;align-items:center} .brand img{width:40px;height:40px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);box-shadow:0 12px 32px rgba(0,0,0,.55);object-fit:cover}
+    .brand b{display:block;font-size:14px;letter-spacing:.2px} .brand small{display:block;color:var(--muted);margin-top:2px;font-size:12px}
+    .nav{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .pill{padding:9px 11px;border-radius:999px;border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.05);font-weight:900;font-size:13px;display:inline-flex;align-items:center;gap:8px;transition:.18s ease;text-decoration:none}
+    .pill:hover{border-color:rgba(125,211,252,.50);background:rgba(125,211,252,.08);transform:translateY(-1px)}
+    .pill.cta{border-color:rgba(125,211,252,.90);background:linear-gradient(135deg,rgba(125,211,252,.38),rgba(96,165,250,.18));text-transform:uppercase;letter-spacing:.6px}
+    .icon{width:18px;height:18px;display:block;object-fit:contain;filter:drop-shadow(0 6px 18px rgba(0,0,0,.35))}
+    .hero{margin-top:14px;border-radius:calc(var(--r) + 10px);overflow:hidden;border:1px solid rgba(255,255,255,.10);box-shadow:var(--shadow);background:rgba(3,6,12,.30)}
+    .heroInner{padding:18px} h1{margin:0 0 10px;font-size:clamp(26px,3vw,44px);line-height:1.08;letter-spacing:-.5px}
+    .sub{margin:0;color:var(--muted);font-size:15px;line-height:1.7;max-width:72ch}
+    .ctaRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;align-items:center}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:11px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);font-weight:950;font-size:13.5px;white-space:nowrap;transition:.18s ease;text-decoration:none}
+    .btn.primary{border-color:rgba(125,211,252,.92);background:linear-gradient(135deg,rgba(125,211,252,.40),rgba(96,165,250,.18));text-transform:uppercase;letter-spacing:.6px}
+    .btn:hover{filter:brightness(1.06);transform:translateY(-1px)}
+    .card{margin-top:14px;border:1px solid rgba(255,255,255,.10);border-radius:var(--r);padding:16px;background:linear-gradient(180deg,rgba(18,26,45,.66),rgba(8,12,22,.88));box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 16px 50px rgba(0,0,0,.45)}
+    .card h2{margin:0 0 10px;font-size:18px;letter-spacing:.35px;text-transform:uppercase}
+    .card h2::after{content:"";display:block;width:42px;height:2px;background:linear-gradient(90deg,rgba(125,211,252,.9),transparent);margin-top:7px}
+    .card p, .card li{color:var(--muted);line-height:1.75;font-size:14px}
+    footer{margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,255,255,.08);color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}
+    .langWrap{position:relative}
+    .langBtn{cursor:pointer;user-select:none;padding:10px 12px;border-radius:999px;border:1px solid rgba(125,211,252,.98);background:linear-gradient(135deg,rgba(125,211,252,.60),rgba(96,165,250,.22));font-weight:950;font-size:13px;display:inline-flex;align-items:center;gap:8px;color:rgba(234,242,255,.98)}
+    .langMenu{position:absolute;right:0;top:calc(100% + 10px);min-width:220px;max-height:320px;overflow:auto;border-radius:16px;border:1px solid rgba(255,255,255,.12);background:rgba(8,12,22,.96);box-shadow:0 22px 70px rgba(0,0,0,.70);padding:8px;display:none;z-index:999}
+    .langMenu.open{display:block}
+    .langItem{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 10px;border-radius:12px;border:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.03);color:var(--text);font-weight:900;font-size:13px;cursor:pointer;text-align:left}
+    .langItem:hover{border-color:rgba(125,211,252,.40);background:rgba(125,211,252,.08)}
+    .langLeft{display:flex;align-items:center;gap:10px}
+    .langFlag{font-size:16px;line-height:1}
+    .langCode{color:var(--muted);font-weight:900;font-size:12px}
+    </style>
+</head>
+<body>
+  <div class="top">
+    <div class="topInner">
+      <div class="brand">
+        <img src="/assets/logo.png" alt="WOSC logo"/>
+        <div>
+          <b>WOSC • Whiteout Survival Community</b>
+          <small>by Bros24 • State 214</small>
+        </div>
+      </div>
+      
+    <nav class="nav" aria-label="Top navigation">
+      <a class="pill" href="/it/index.html">Home</a>
+      <a class="pill" href="/it/guide.html">Guida</a>
+      <a class="pill" href="/it/svs.html">SVS</a>
+      <a class="pill" href="/it/bear-trap.html">Bear Trap</a>
+      <a class="pill" href="/it/frostfire-mine.html">Frostfire Mine</a>
+      <a class="pill" href="/it/state-transfer.html">State Transfer</a>
+
+      <a class="pill cta" href="https://discord.gg/wos-community" target="_blank" rel="noopener">
+        <img class="icon" src="/assets/discord-logo.jpg" alt="Discord" />
+        <span>Entra su Discord</span>
+      </a>
+
+      <div class="langWrap">
+        <button class="langBtn" id="langBtn" type="button" aria-haspopup="listbox" aria-expanded="false">
+          <span class="langFlag" id="langBtnFlag">🌐</span>
+          <span id="langBtnLabel">IT</span>
+          <span id="langBtnCode">it</span>
+        </button>
+        <div class="langMenu" id="langMenu" role="listbox" aria-label="Language selector"></div>
+      </div>
+    </nav>
+    
+    </div>
+  </div>
+
+  <main class="wrap">
+    <section class="hero" aria-label="Hero">
+      <div class="heroInner">
+        <h1>Guida Frostfire Mine – Orichalcum, vene e consigli</h1>
+        <p class="sub">Strategia Frostfire Mine: teletrasporti, controllo vene, picchi punti, rotazioni.</p>
+        <div class="ctaRow">
+          <a class="btn primary" href="https://discord.gg/wos-community" target="_blank" rel="noopener">
+            <img class="icon" src="/assets/discord-logo.jpg" alt="Discord"/>
+            <span>Entra su Discord</span>
+          </a>
+          <a class="btn" href="/it/guide.html">Guida</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      
+<h2>Frostfire Mine overview</h2>
+<p>Frostfire Mine is a timed event (commonly <strong>30 minutes</strong>) where the goal is to gather <strong>Orichalcum</strong> by occupying different veins. Several guides note that troops in Frostfire Mine are <strong>not permanently killed</strong>, so you can play aggressively. Advanced teleports may be available with cooldowns, letting you reposition quickly.</p>
+
+<h2>High-impact tips</h2>
+<ul>
+  <li>Join on time and <strong>teleport early</strong> to strong gathering zones.</li>
+  <li>Keep all marches busy—idle marches are lost points.</li>
+  <li>Watch for <strong>vein bursts/outbursts</strong> (point spikes) and rotate fast.</li>
+</ul>
+
+<h2>Discord checklist for Frostfire Mine</h2>
+<ol>
+  <li>Create squads with clear roles (gatherers vs fighters).</li>
+  <li>Use one pinned map callout message for key veins/areas.</li>
+  <li>Share a 3-step rotation plan for new players.</li>
+</ol>
+<p><a href="https://www.whiteoutsurvival.wiki/events/frostfire-mine/" target="_blank" rel="noopener">Riferimenti</a></p>
+    </section>
+
+    <section class="card">
+      <h2>FAQ</h2>
+      <ul>
+        <li><strong>WOSC è ufficiale?</strong><br/>No, è una community Discord gestita dai giocatori.</li><li><strong>Cos’è SVS?</strong><br/>SVS (State vs State) mette due stati contro, con fasi di preparazione e battaglia.</li><li><strong>Quanto spesso Bear Hunt?</strong><br/>Evento di alleanza circa ogni due giorni, dura ~30 minuti.</li><li><strong>Posso fare transfer?</strong><br/>Sì, con lo State Transfer, con restrizioni.</li><li><strong>Cos’è Frostfire Mine?</strong><br/>Evento di 30 minuti per raccogliere Orichalcum dalle vene; niente perdite permanenti di truppe.</li><li><strong>Come entro?</strong><br/>Clicca “Entra su Discord”.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <span>© <span id="y"></span> WOSC – Whiteout Survival Community • <a href="https://discord.gg/wos-community" target="_blank" rel="noopener">Entra su Discord</a></span>
+      <span style="opacity:.9">whiteoutsurvival-community.com</span>
+    </footer>
+  </main>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  
+    <script>
+      const LANGS = [{"code": "en", "name": "English", "flag": "\ud83c\uddec\ud83c\udde7"}, {"code": "de", "name": "Deutsch", "flag": "\ud83c\udde9\ud83c\uddea"}, {"code": "fr", "name": "Fran\u00e7ais", "flag": "\ud83c\uddeb\ud83c\uddf7"}, {"code": "es", "name": "Espa\u00f1ol", "flag": "\ud83c\uddea\ud83c\uddf8"}, {"code": "it", "name": "Italiano", "flag": "\ud83c\uddee\ud83c\uddf9"}, {"code": "pl", "name": "Polski", "flag": "\ud83c\uddf5\ud83c\uddf1"}];
+      const CURRENT_LANG = "it";
+      const PAGE = "frostfire-mine.html";
+      function openLangMenu(){document.getElementById("langMenu").classList.add("open");document.getElementById("langBtn").setAttribute("aria-expanded","true");}
+      function closeLangMenu(){document.getElementById("langMenu").classList.remove("open");document.getElementById("langBtn").setAttribute("aria-expanded","false");}
+      function buildLangMenu(){
+        const menu=document.getElementById("langMenu");menu.innerHTML="";
+        LANGS.forEach(l=>{
+          const b=document.createElement("button");b.type="button";b.className="langItem";
+          b.innerHTML=`<span class="langLeft"><span class="langFlag">${l.flag}</span><span>${l.name}</span></span><span class="langRight"><span class="langCode">${l.code}</span></span>`;
+          b.addEventListener("click",()=>{localStorage.setItem("wosc_lang",l.code);window.location.href="/"+l.code+"/"+PAGE;});
+          menu.appendChild(b);
+        });
+      }
+      (function init(){
+        buildLangMenu();
+        const stored=localStorage.getItem("wosc_lang");
+        if(stored && stored!==CURRENT_LANG){ /* keep user preference */ }
+        document.getElementById("langBtn").addEventListener("click",(e)=>{e.stopPropagation();document.getElementById("langMenu").classList.contains("open")?closeLangMenu():openLangMenu();});
+        document.getElementById("langMenu").addEventListener("click",(e)=>e.stopPropagation());
+        document.addEventListener("click",()=>closeLangMenu());
+        document.addEventListener("keydown",(e)=>{if(e.key==="Escape") closeLangMenu();});
+      })();
+    </script>
+    
+</body>
+</html>
